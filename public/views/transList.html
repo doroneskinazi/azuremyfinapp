@@ -1,0 +1,41 @@
+<div class="container">
+        <div class="row "> 
+            <div class="col-sm-1">
+                <span>Date</span>
+            </div>
+            <div class="col-sm-1">
+                <span>Amount</span>
+            </div>
+            <div class="col-sm-1">
+                <span>Category</span>
+            </div>
+            <div class="col-sm-1">
+                <span>Type</span>
+            </div>
+            <div class="col-sm-2">
+                <span>Description</span>
+            </div>
+        </div>
+    
+        {{with .MoneyTrans}}
+        {{ range  .}}
+        <div class="row"> 
+            <div class="col-sm-1">
+                <span>{{.TransDate}}</span>
+            </div>
+            <div class="col-sm-1">
+                <span>{{.TransAmount}}</span>
+            </div>
+            <div class="col-sm-1">
+                <span>{{.TransCategory}}</span>
+            </div>
+            <div class="col-sm-1">
+                <span>{{.TransType}}</span>
+            </div>
+            <div class="col-sm-2">
+                <span>{{.TransDescription}}</span>
+            </div>
+        </div>
+        {{end}}
+        {{end}}
+</div>    

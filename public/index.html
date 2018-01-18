@@ -1,0 +1,49 @@
+<!doctype html>
+<html data-framework="vue">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>My Fin App</title>
+     <!-- Latest compiled and minified CSS -->
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 
+     <!-- JQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ 
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+ 
+     <!-- Vue.js -->
+     <script src="./js/vue.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>  
+  <section class="myfinapp">
+    <div id="app" class = "container-fluid">
+      <div class="jumbotron">
+        <header class="header">
+          <h1>MyFin<span class="badge badge-secondary">App</span></h1>
+        </header>
+      </div>
+    
+      <button type="button" v-on:click="transEntry" class="btn btn-outline-primary" class="border border-primary">Enter</button>
+      <button type="button" v-on:click="transList" class="btn btn-outline-secondary" class="border border-secondary">List</button>
+      <div class="container">
+        <br>
+        <span v-html="currentPage"></span>
+  
+    </div>
+  </div>
+  </section>
+ 
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
